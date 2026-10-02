@@ -1,0 +1,5 @@
+.DS_Store
+.idea/
+*.pdf
+wp-content/uploads/
+wp-content/themes/*/assets/css/main.css
