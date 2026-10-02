@@ -1,0 +1,49 @@
+.wheel {
+    margin-inline: auto;
+    max-width: 25rem;
+    width: 100%;
+}
+
+.wheel__segment {
+    stroke: var(--color-white);
+    stroke-width: 2;
+}
+
+.wheel__segment--purple {
+    fill: var(--color-purple);
+}
+
+.wheel__segment--navy {
+    fill: var(--color-navy);
+}
+
+.wheel__segment--action {
+    fill: var(--color-action);
+}
+
+.wheel__segment--cyan {
+    fill: var(--color-cyan);
+}
+
+.wheel__label {
+    fill: var(--color-white);
+    font-size: 12.5px;
+    text-anchor: middle;
+}
+
+.wheel__label--dark {
+    fill: var(--color-navy);
+}
+
+.wheel__hub {
+    fill: var(--color-white);
+    stroke: var(--color-purple);
+    stroke-width: 2;
+}
+
+.wheel__hub-label {
+    fill: var(--color-purple);
+    font-size: 16px;
+    font-weight: 500;
+    text-anchor: middle;
+}

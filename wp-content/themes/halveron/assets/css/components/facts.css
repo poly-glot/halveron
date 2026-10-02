@@ -1,0 +1,23 @@
+.facts {
+    display: grid;
+    gap: var(--space-4) var(--grid-gap);
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 12rem), 1fr));
+}
+
+.facts__item {
+    border-top: 2px solid var(--color-purple);
+    display: grid;
+    gap: var(--space-1);
+    padding-top: var(--space-3);
+}
+
+.facts dt {
+    font-size: var(--text-sm);
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+.facts dd {
+    color: var(--color-purple);
+    font-size: var(--text-lg);
+}

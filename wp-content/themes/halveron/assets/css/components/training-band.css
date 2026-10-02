@@ -1,0 +1,35 @@
+.training__intro {
+    font-size: var(--text-md);
+    line-height: 1.5;
+    margin-bottom: var(--space-7);
+}
+
+.training__grid {
+    display: grid;
+    gap: var(--space-8) var(--grid-gap);
+}
+
+.training__custom {
+    align-content: start;
+    display: grid;
+    gap: var(--space-5);
+    justify-items: start;
+}
+
+.training__list {
+    display: grid;
+    gap: var(--space-1);
+    list-style: none;
+    padding: 0;
+}
+
+.training__list li::before {
+    content: "–" / "";
+    padding-right: var(--space-2);
+}
+
+@media (min-width: 64rem) {
+    .training__grid {
+        grid-template-columns: minmax(0, 2fr) minmax(0, 1fr);
+    }
+}

@@ -1,0 +1,9 @@
+.map-band {
+    background: var(--color-paper);
+}
+
+.map-band__image {
+    height: clamp(14rem, 8rem + 20vw, 26rem);
+    object-fit: cover;
+    width: 100%;
+}

@@ -1,0 +1,23 @@
+.values__title {
+    margin-bottom: var(--space-6);
+}
+
+.value {
+    display: grid;
+    gap: var(--space-5);
+    justify-items: center;
+    padding-block: var(--space-6);
+    text-align: center;
+}
+
+.value__title {
+    font-size: clamp(2.25rem, 1.5rem + 3.2vw, 4.5rem);
+    font-weight: 300;
+    line-height: 1.1;
+}
+
+.value__text {
+    font-size: var(--text-base);
+    line-height: 1.6;
+    max-width: 24rem;
+}

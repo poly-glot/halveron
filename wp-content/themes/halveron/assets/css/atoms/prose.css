@@ -1,0 +1,115 @@
+.prose {
+    color: var(--color-ink);
+    font-size: var(--text-base);
+    line-height: 1.7;
+    max-width: var(--measure-wide);
+}
+
+.band--purple .prose,
+.band--navy .prose,
+.band--charcoal .prose,
+.band--black .prose {
+    color: var(--color-white);
+}
+
+.band--purple .prose a,
+.band--navy .prose a,
+.band--charcoal .prose a,
+.band--black .prose a {
+    color: var(--color-white);
+}
+
+.band--cyan .prose {
+    color: var(--color-navy);
+}
+
+.band--cyan .prose a {
+    color: var(--color-navy);
+}
+
+.prose > * + * {
+    margin-top: var(--space-5);
+}
+
+.prose h2 {
+    font-size: var(--text-2xl);
+    margin-top: var(--space-7);
+}
+
+.prose h3 {
+    font-size: var(--text-lg);
+    margin-top: var(--space-6);
+}
+
+.prose h2:first-child,
+.prose h3:first-child {
+    margin-top: 0;
+}
+
+.prose h2 + *,
+.prose h3 + * {
+    margin-top: var(--space-3);
+}
+
+.prose ul,
+.prose ol {
+    padding-left: var(--space-5);
+}
+
+.prose li + li {
+    margin-top: var(--space-2);
+}
+
+.prose strong {
+    font-weight: 500;
+}
+
+.prose--wide {
+    max-width: none;
+}
+
+.prose--large {
+    font-size: var(--text-md);
+}
+
+@media (min-width: 48rem) {
+    .prose--columns {
+        column-gap: var(--grid-gap);
+        columns: 2;
+        max-width: none;
+    }
+
+    .prose--columns > * {
+        break-inside: avoid;
+    }
+
+    .prose--columns > :first-child,
+    .prose--columns > * + * {
+        margin-bottom: var(--space-5);
+        margin-top: 0;
+    }
+}
+
+.pull-quote {
+    border-left: 6px solid var(--color-purple);
+    color: var(--color-purple);
+    font-size: var(--text-2xl);
+    font-style: italic;
+    font-weight: 300;
+    line-height: 1.35;
+    margin-block: var(--space-6);
+    padding-left: var(--space-5);
+}
+
+.pull-quote__attribution {
+    color: var(--color-ink);
+    display: block;
+    font-size: var(--text-sm);
+    font-style: normal;
+    font-weight: 400;
+    margin-top: var(--space-3);
+}
+
+.prose .pull-quote {
+    margin-block: var(--space-6);
+}

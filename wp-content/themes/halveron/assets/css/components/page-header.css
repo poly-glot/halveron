@@ -1,0 +1,56 @@
+.page-header {
+    background: var(--color-lavender);
+}
+
+.page-header__inner {
+    display: grid;
+    gap: var(--space-4);
+    padding-block: var(--space-5) var(--space-8);
+}
+
+.page-header__title {
+    align-items: center;
+    color: var(--color-purple);
+    display: flex;
+    flex-wrap: wrap;
+    font-size: var(--text-3xl);
+    font-weight: 300;
+    gap: var(--space-3) var(--space-4);
+    line-height: 1.2;
+}
+
+.page-header__title .icon--capability {
+    height: 2.75rem;
+    width: 2.75rem;
+}
+
+.page-header__lede {
+    color: var(--color-ink);
+    font-size: clamp(1.125rem, 1rem + 0.5vw, 1.5rem);
+    line-height: 1.4;
+    max-width: var(--measure-wide);
+}
+
+.page-header__text {
+    max-width: var(--measure-wide);
+}
+
+.page-header__media {
+    margin-top: var(--space-4);
+}
+
+.page-header__split {
+    display: grid;
+    gap: var(--space-6) var(--grid-gap);
+    margin-top: var(--space-4);
+}
+
+@media (min-width: 48rem) {
+    .page-header__split {
+        grid-template-columns: minmax(0, 1fr) minmax(0, 2fr);
+    }
+
+    .page-header__split--even {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+}

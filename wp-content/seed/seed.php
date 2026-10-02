@@ -2080,7 +2080,6 @@ echo 'options: ' . count( $options ) . " set\n";
 $pages = [
 	'home'                  => [
 		'meta'      => [
-			'home_capabilities_default' => $capability_ids['operating-model-design'],
 			'home_capabilities_heading' => 'Discover our capabilities',
 			'home_clients_button_label' => 'See what we have achieved for them',
 			'home_clients_button_url'   => '/thinking/#case-studies',

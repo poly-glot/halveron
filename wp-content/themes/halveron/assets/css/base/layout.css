@@ -1,0 +1,229 @@
+.container {
+    margin-inline: auto;
+    max-width: calc(var(--container) + var(--gutter) * 2);
+    padding-inline: var(--gutter);
+    width: 100%;
+}
+
+.section {
+    padding-block: var(--space-9);
+    position: relative;
+}
+
+.section--tight {
+    padding-block: var(--space-7);
+}
+
+.band--white {
+    background: var(--color-white);
+}
+
+.band--lavender {
+    background: var(--color-lavender);
+}
+
+.band--paper {
+    background: var(--color-paper);
+}
+
+.band--purple,
+.band--navy,
+.band--charcoal,
+.band--black {
+    --heading-color: var(--color-white);
+    color: var(--color-white);
+}
+
+.band--purple {
+    background: var(--color-purple);
+}
+
+.band--navy {
+    background: var(--color-navy);
+}
+
+.band--charcoal {
+    background: var(--color-charcoal);
+}
+
+.band--black {
+    background: var(--color-black);
+}
+
+.band--cyan {
+    --heading-color: var(--color-navy);
+    background: var(--color-cyan);
+    color: var(--color-navy);
+}
+
+.band--purple a:not([class]),
+.band--navy a:not([class]),
+.band--charcoal a:not([class]),
+.band--black a:not([class]),
+.ticket-box a:not([class]) {
+    color: var(--color-white);
+    text-decoration: underline;
+}
+
+.band--purple a:not([class]):hover,
+.band--navy a:not([class]):hover,
+.band--charcoal a:not([class]):hover,
+.band--black a:not([class]):hover,
+.ticket-box a:not([class]):hover {
+    color: var(--color-white);
+    text-decoration-thickness: 2px;
+}
+
+.band--purple :focus-visible,
+.band--navy :focus-visible,
+.band--charcoal :focus-visible,
+.band--black :focus-visible {
+    outline-color: var(--color-focus-on-dark);
+}
+
+.section-head {
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--space-4) var(--space-6);
+    justify-content: space-between;
+    margin-bottom: var(--space-6);
+}
+
+.section-head--centred {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr);
+    justify-items: center;
+    text-align: center;
+}
+
+.section-head__intro {
+    flex-basis: 100%;
+    font-size: var(--text-md);
+    line-height: 1.5;
+    max-width: var(--measure-wide);
+}
+
+.section-head--centred .section-head__intro {
+    max-width: var(--measure-wide);
+}
+
+.section-foot {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--space-4);
+    justify-content: center;
+    margin-top: var(--space-7);
+}
+
+@media (min-width: 48rem) {
+    .section-head--centred {
+        grid-template-columns: minmax(0, 1fr) auto minmax(0, 1fr);
+    }
+
+    .section-head--centred > :first-child {
+        grid-column: 2;
+    }
+
+    .section-head--centred > .button {
+        grid-column: 3;
+        grid-row: 1;
+        justify-self: end;
+    }
+
+    .section-head--centred .section-head__intro {
+        grid-column: 1 / -1;
+    }
+}
+
+.stack {
+    align-content: start;
+    display: grid;
+    gap: var(--space-5);
+}
+
+.stack > .button,
+.stack > .text-link {
+    justify-self: start;
+}
+
+.with-aside {
+    display: grid;
+    gap: var(--space-8) var(--grid-gap);
+    padding-block: var(--space-8);
+}
+
+.with-aside__main {
+    align-content: start;
+    display: grid;
+    gap: var(--space-7);
+    min-width: 0;
+}
+
+.with-aside__aside {
+    align-content: start;
+    display: grid;
+    gap: var(--space-7);
+}
+
+@media (min-width: 60rem) {
+    .with-aside {
+        grid-template-columns: minmax(0, 1fr) minmax(15rem, 22.5rem);
+    }
+}
+
+.grid-2,
+.grid-3,
+.grid-4 {
+    display: grid;
+    gap: var(--space-7) var(--grid-gap);
+    list-style: none;
+    padding: 0;
+}
+
+@media (min-width: 40rem) {
+    .grid-2,
+    .grid-4 {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+@media (min-width: 48rem) {
+    .grid-3 {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+}
+
+@media (min-width: 64rem) {
+    .grid-4 {
+        grid-template-columns: repeat(4, minmax(0, 1fr));
+    }
+}
+
+.visually-hidden {
+    block-size: 1px;
+    clip-path: inset(50%);
+    inline-size: 1px;
+    overflow: hidden;
+    position: absolute;
+    white-space: nowrap;
+}
+
+.skip-link {
+    background: var(--color-navy);
+    color: var(--color-white);
+    font-weight: 500;
+    left: var(--space-4);
+    padding: var(--space-3) var(--space-4);
+    position: absolute;
+    top: 0;
+    transform: translateY(-120%);
+    transition: transform var(--duration) var(--ease);
+    z-index: 100;
+}
+
+.skip-link:focus {
+    color: var(--color-white);
+    outline-color: var(--color-focus-on-dark);
+    transform: translateY(var(--space-4));
+}

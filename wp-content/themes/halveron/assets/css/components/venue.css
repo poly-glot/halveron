@@ -1,0 +1,30 @@
+.venue {
+    display: grid;
+    gap: var(--space-5) var(--grid-gap);
+}
+
+.venue__image {
+    aspect-ratio: 3 / 2;
+    background: var(--color-white);
+    object-fit: cover;
+    width: 100%;
+}
+
+.venue__text {
+    display: grid;
+    font-size: var(--text-sm);
+    gap: var(--space-4);
+    line-height: 1.7;
+}
+
+@media (min-width: 48rem) {
+    .venue {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+@media (min-width: 64rem) {
+    .venue {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+}

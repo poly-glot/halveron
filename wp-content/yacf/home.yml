@@ -45,11 +45,6 @@ field_groups:
         label: Capabilities heading
         type: text
         width: 50
-      home_capabilities_default:
-        label: Capability tab shown first
-        post_types: [capability]
-        type: post
-        width: 50
       home_training_heading:
         label: Training heading
         type: text

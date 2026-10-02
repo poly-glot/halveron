@@ -1,0 +1,23 @@
+.intro {
+    text-align: center;
+}
+
+.intro__chevron {
+    color: var(--color-ink);
+    height: 1.75rem;
+    margin: 0 auto var(--space-5);
+    stroke-width: 3;
+    width: 1.75rem;
+}
+
+.intro__text {
+    font-size: var(--text-md);
+    line-height: 1.6;
+    margin: var(--space-6) auto 0;
+    max-width: 57rem;
+}
+
+.intro__cards {
+    margin-top: var(--space-8);
+    text-align: left;
+}

@@ -1,0 +1,52 @@
+.logo {
+    align-items: center;
+    color: var(--color-purple);
+    display: inline-flex;
+    gap: var(--space-2);
+    line-height: 1;
+    min-height: 2.75rem;
+    text-decoration: none;
+}
+
+.logo:hover {
+    color: var(--color-purple);
+}
+
+.logo--light,
+.logo--light:hover {
+    color: var(--color-white);
+}
+
+.logo__mark {
+    fill: currentColor;
+    flex: none;
+    height: 2.5rem;
+    width: 2.5rem;
+}
+
+.mark__accent {
+    fill: var(--color-cyan);
+}
+
+.logo__wordmark {
+    font-size: 1.25rem;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+}
+
+@media (min-width: 30rem) {
+    .logo__wordmark {
+        font-size: 1.5rem;
+    }
+}
+
+@media (min-width: 48rem) {
+    .logo__mark {
+        height: 3rem;
+        width: 3rem;
+    }
+
+    .logo__wordmark {
+        font-size: 2rem;
+    }
+}
