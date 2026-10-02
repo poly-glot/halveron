@@ -1,0 +1,17 @@
+.partner-list__item {
+    align-content: start;
+    display: grid;
+    gap: var(--space-4);
+}
+
+.partner-list__logo {
+    height: 3.5rem;
+    object-fit: contain;
+    object-position: left center;
+    width: 12rem;
+}
+
+.partner-list__text {
+    font-size: var(--text-sm);
+    line-height: 1.7;
+}

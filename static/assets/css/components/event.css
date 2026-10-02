@@ -1,0 +1,110 @@
+.event-card {
+    --heading-color: var(--color-purple);
+    background: var(--color-white);
+    color: var(--color-ink);
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.event-card :focus-visible {
+    outline-color: var(--color-focus);
+}
+
+.event-card__image {
+    aspect-ratio: 16 / 9;
+    background: var(--color-line);
+    object-fit: cover;
+    order: -1;
+    width: 100%;
+}
+
+.event-card__body {
+    align-items: flex-start;
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    gap: var(--space-2);
+    padding: var(--space-5) var(--space-5) var(--space-6);
+}
+
+.event-card__title {
+    font-size: var(--text-xl);
+    line-height: 1.35;
+}
+
+.event-card__date {
+    font-size: var(--text-sm);
+}
+
+.event-card__summary {
+    font-size: var(--text-sm);
+    line-height: 1.7;
+    margin-block: var(--space-2) var(--space-4);
+}
+
+.event-card .button {
+    margin-top: auto;
+}
+
+.event-facts {
+    display: grid;
+    gap: var(--space-4) var(--grid-gap);
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 12rem), 1fr));
+}
+
+.event-facts__item {
+    border-top: 2px solid var(--color-purple);
+    display: grid;
+    gap: var(--space-1);
+    padding-top: var(--space-3);
+}
+
+.event-facts dt {
+    font-size: var(--text-sm);
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+.event-facts dd {
+    color: var(--color-purple);
+    font-size: var(--text-lg);
+}
+
+.agenda {
+    display: grid;
+    list-style: none;
+    padding: 0;
+}
+
+.agenda__item {
+    border-bottom: 1px solid var(--color-line);
+    display: grid;
+    gap: var(--space-1) var(--space-5);
+    padding-block: var(--space-4);
+}
+
+.agenda__time {
+    color: var(--color-purple);
+    font-weight: 500;
+}
+
+@media (min-width: 40rem) {
+    .agenda__item {
+        grid-template-columns: 7rem minmax(0, 1fr);
+    }
+}
+
+.event-callout {
+    display: grid;
+    gap: var(--space-5);
+    justify-items: center;
+    text-align: center;
+}
+
+.event-callout__lines {
+    color: var(--color-purple);
+    display: grid;
+    font-size: var(--text-xl);
+    line-height: 1.4;
+}

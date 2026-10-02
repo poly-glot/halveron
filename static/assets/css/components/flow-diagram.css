@@ -1,0 +1,82 @@
+.flow-diagram {
+    display: grid;
+    gap: var(--space-6);
+}
+
+.flow-diagram__svg {
+    margin-inline: auto;
+    max-width: 42.5rem;
+    width: 100%;
+}
+
+.flow-diagram__spoke {
+    fill: none;
+    stroke: var(--color-purple);
+    stroke-width: 2;
+}
+
+.flow-diagram__hub {
+    fill: var(--color-purple);
+}
+
+.flow-diagram__node {
+    fill: var(--color-cyan);
+    stroke: var(--color-navy);
+    stroke-width: 2;
+}
+
+.flow-diagram__number {
+    fill: var(--color-navy);
+    font-size: 16px;
+    font-weight: 700;
+    text-anchor: middle;
+}
+
+.flow-diagram__hub-label {
+    fill: var(--color-white);
+    font-size: 18px;
+    font-weight: 500;
+    text-anchor: middle;
+}
+
+.flow-diagram__label {
+    fill: var(--color-ink);
+    font-size: 17px;
+    text-anchor: middle;
+}
+
+.flow-diagram__label--start {
+    text-anchor: start;
+}
+
+.flow-diagram__label--end {
+    text-anchor: end;
+}
+
+.flow-diagram__steps {
+    counter-reset: step;
+    display: grid;
+    gap: var(--space-3) var(--grid-gap);
+    list-style: none;
+    padding: 0;
+}
+
+.flow-diagram__step {
+    align-items: baseline;
+    counter-increment: step;
+    display: flex;
+    gap: var(--space-3);
+}
+
+.flow-diagram__step::before {
+    color: var(--color-purple);
+    content: counter(step) / "";
+    font-weight: 700;
+    min-width: 1.25rem;
+}
+
+@media (min-width: 40rem) {
+    .flow-diagram__steps {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+}

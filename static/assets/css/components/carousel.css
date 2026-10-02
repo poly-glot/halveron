@@ -1,0 +1,158 @@
+.carousel {
+    align-items: center;
+    display: grid;
+    gap: var(--space-4) var(--space-2);
+    grid-template-columns: 2.75rem minmax(0, 1fr) 2.75rem;
+}
+
+.carousel:has(.carousel__button[hidden]) {
+    grid-template-columns: minmax(0, 1fr);
+}
+
+.carousel__track {
+    display: grid;
+    gap: var(--grid-gap);
+    grid-auto-columns: var(--slide-width, 100%);
+    grid-auto-flow: column;
+    grid-column: 2;
+    grid-row: 1;
+    list-style: none;
+    margin: 0;
+    overflow-x: auto;
+    overscroll-behavior-x: contain;
+    padding: 0 0 var(--space-3);
+    scroll-snap-type: x mandatory;
+}
+
+.carousel:has(.carousel__button[hidden]) .carousel__track {
+    grid-column: 1;
+}
+
+.carousel:not(:has(.carousel__button[hidden])) .carousel__track {
+    padding-bottom: 0;
+    scrollbar-width: none;
+}
+
+.carousel:not(:has(.carousel__button[hidden])) .carousel__track::-webkit-scrollbar {
+    display: none;
+}
+
+.carousel__slide {
+    min-width: 0;
+    scroll-snap-align: start;
+}
+
+.carousel__button {
+    align-items: center;
+    background: transparent;
+    border: 0;
+    color: var(--color-action);
+    cursor: pointer;
+    display: inline-flex;
+    grid-row: 1;
+    height: 2.75rem;
+    justify-content: center;
+    padding: 0;
+    width: 2.75rem;
+}
+
+.carousel__button--previous {
+    grid-column: 1;
+}
+
+.carousel__button--next {
+    grid-column: 3;
+}
+
+.carousel__button .icon {
+    height: 2rem;
+    stroke-width: 2.5;
+    width: 2rem;
+}
+
+.carousel__button:hover {
+    color: var(--color-action-dark);
+}
+
+.carousel__button[aria-disabled="true"] {
+    cursor: default;
+    opacity: 0.3;
+}
+
+.carousel__dots {
+    display: flex;
+    gap: var(--space-1);
+    grid-column: 1 / -1;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+}
+
+.carousel__dot {
+    background: transparent;
+    border: 0;
+    color: var(--color-action);
+    cursor: pointer;
+    height: 1.5rem;
+    padding: 0;
+    position: relative;
+    width: 1.5rem;
+}
+
+.carousel__dot::before {
+    border: 2px solid currentColor;
+    border-radius: 50%;
+    content: "";
+    height: 0.75rem;
+    inset: 0;
+    margin: auto;
+    position: absolute;
+    width: 0.75rem;
+}
+
+.carousel__dot[aria-current="true"]::before {
+    background: currentColor;
+}
+
+.band--cyan .carousel__button,
+.band--cyan .carousel__dot {
+    color: var(--color-navy);
+}
+
+.band--cyan .carousel__track:focus-visible,
+.band--cyan .carousel :focus-visible {
+    outline-color: var(--color-navy);
+}
+
+.carousel--logos {
+    --slide-width: calc((100% - var(--grid-gap)) / 2);
+}
+
+.carousel--logos .carousel__slide {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    min-height: 6rem;
+}
+
+.carousel--logos .carousel__logo {
+    height: 4rem;
+    object-fit: contain;
+    width: 100%;
+}
+
+@media (min-width: 40rem) {
+    .carousel--logos {
+        --slide-width: calc((100% - var(--grid-gap) * 2) / 3);
+    }
+}
+
+@media (min-width: 64rem) {
+    .carousel--logos {
+        --slide-width: calc((100% - var(--grid-gap) * 4) / 5);
+    }
+
+    .carousel--logos:not(:has(.carousel__button[hidden])) {
+        gap: var(--space-4) var(--space-8);
+    }
+}

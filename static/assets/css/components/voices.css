@@ -1,0 +1,48 @@
+.voices {
+    display: grid;
+    gap: var(--space-7) var(--grid-gap);
+    list-style: none;
+    padding: 0;
+}
+
+@media (min-width: 48rem) {
+    .voices {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+}
+
+.voice {
+    display: grid;
+    gap: var(--space-5);
+    margin: 0;
+}
+
+.voice__person {
+    align-items: center;
+    display: grid;
+    gap: 0 var(--space-4);
+    grid-template-columns: 3.75rem minmax(0, 1fr);
+}
+
+.voice__portrait {
+    aspect-ratio: 1;
+    background: var(--color-white);
+    border-radius: 50%;
+    grid-row: span 2;
+    object-fit: cover;
+    width: 3.75rem;
+}
+
+.voice__name {
+    align-self: end;
+    font-weight: 500;
+}
+
+.voice__role {
+    align-self: start;
+    font-size: var(--text-sm);
+}
+
+.voice__quote {
+    line-height: 1.7;
+}

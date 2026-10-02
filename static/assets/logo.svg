@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 260 48" role="img" aria-labelledby="logo-title">
+    <title id="logo-title">Halveron Consulting</title>
+    <path fill="#39207c" d="M6 4h11v32H6zM31 12h11v32H31z" />
+    <path fill="#00aec7" d="M17 22 31 17v8l-14 5z" />
+    <text x="56" y="36" fill="#39207c" font-family="Roboto, 'Helvetica Neue', Arial, sans-serif" font-size="32" font-weight="700" letter-spacing="2.5">HALVERON</text>
+</svg>

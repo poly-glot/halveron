@@ -1,0 +1,67 @@
+<header class="site-header">
+    <div class="search-panel" id="search-panel" hidden>
+        <div class="search-panel__inner container">
+            <form class="search-panel__form" role="search" action="/search/" method="get">
+                <label class="visually-hidden" for="search-panel-input">Search our website</label>
+                <input class="search-panel__input" id="search-panel-input" type="search" name="s" placeholder="Search our website…" autocomplete="off">
+                <button class="search-panel__button" type="submit">
+                    <svg class="icon" aria-hidden="true" focusable="false"><use href="#icon-search" /></svg>
+                    <span class="visually-hidden">Search</span>
+                </button>
+            </form>
+            <button class="search-panel__button search-panel__button--close" type="button" data-search-close>
+                <svg class="icon" aria-hidden="true" focusable="false"><use href="#icon-close" /></svg>
+                <span class="visually-hidden">Close search</span>
+            </button>
+        </div>
+    </div>
+    <div class="site-header__utility container">
+        <a class="logo" href="/" aria-label="Halveron Consulting, home">
+            <svg class="logo__mark" aria-hidden="true" focusable="false"><use href="#mark" /></svg>
+            <span class="logo__wordmark" aria-hidden="true">HALVERON</span>
+        </a>
+        <ul class="utility-nav">
+            <li class="utility-nav__item utility-nav__item--contact"><a class="utility-nav__link" href="/contact/">Contact<span class="visually-hidden"> us</span></a></li>
+            <li class="utility-nav__item">
+                <a class="utility-nav__link utility-nav__link--phone" href="tel:+441632960410">
+                    <svg class="icon utility-nav__icon" aria-hidden="true" focusable="false"><use href="#icon-phone" /></svg>
+                    <span class="utility-nav__number"><span class="visually-hidden">Telephone </span>+44&nbsp;(0)1632&nbsp;960410</span>
+                </a>
+            </li>
+        </ul>
+        <a class="site-search" href="/search/" data-search-link>
+            <svg class="icon" aria-hidden="true" focusable="false"><use href="#icon-search" /></svg>
+            <span class="visually-hidden">Search the site</span>
+        </a>
+        <button class="site-search" type="button" aria-expanded="false" aria-controls="search-panel" data-search-toggle hidden>
+            <svg class="icon site-search__open" aria-hidden="true" focusable="false"><use href="#icon-search" /></svg>
+            <svg class="icon site-search__close" aria-hidden="true" focusable="false"><use href="#icon-close" /></svg>
+            <span class="visually-hidden site-search__open">Search the site</span>
+            <span class="visually-hidden site-search__close">Close search</span>
+        </button>
+    </div>
+    <nav class="site-nav" aria-label="Main">
+        <div class="site-nav__bar container">
+            <button class="site-nav__toggle" type="button" aria-expanded="false" aria-controls="site-nav-menu" hidden>
+                <svg class="icon site-nav__open" aria-hidden="true" focusable="false"><use href="#icon-menu" /></svg>
+                <svg class="icon site-nav__close" aria-hidden="true" focusable="false"><use href="#icon-close" /></svg>
+                <span class="site-nav__open">Menu</span>
+                <span class="site-nav__close">Close menu</span>
+            </button>
+            <div class="site-nav__menu" id="site-nav-menu">
+                <ul class="site-nav__list">
+                    <li><a class="site-nav__link" href="/capabilities/">Our Capabilities</a></li>
+                    <li><a class="site-nav__link" href="/sectors/">Our Sectors</a></li>
+                    <li><a class="site-nav__link" href="/thinking/">Our Thinking</a></li>
+                    <li><a class="site-nav__link" href="/about/">About Us</a></li>
+                </ul>
+                <ul class="site-nav__list site-nav__list--sections">
+                    <li><a class="site-nav__link" href="/training/">Training</a></li>
+                    <li><a class="site-nav__link" href="/careers/">Careers</a></li>
+                    <li><a class="site-nav__link" href="/forum/">Forum</a></li>
+                    <li><a class="site-nav__link" href="/conference/">Conference</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>

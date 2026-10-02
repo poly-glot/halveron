@@ -1,0 +1,35 @@
+.form-panel {
+    background: var(--color-paper);
+    display: grid;
+    gap: var(--space-5);
+    padding: clamp(var(--space-5), 1rem + 3vw, 3.75rem);
+}
+
+.form-panel .field__control {
+    background: var(--color-white);
+}
+
+.form-panel--centred {
+    margin-inline: auto;
+    max-width: 47.5rem;
+}
+
+.form-panel__intro {
+    color: var(--color-ink);
+}
+
+.contact-form {
+    display: grid;
+    gap: var(--space-5);
+}
+
+.contact-form__row {
+    align-items: start;
+    display: grid;
+    gap: var(--space-5);
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 14rem), 1fr));
+}
+
+.contact-form__submit {
+    justify-self: start;
+}

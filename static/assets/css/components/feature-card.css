@@ -1,0 +1,29 @@
+.feature-card {
+    align-items: flex-start;
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-4);
+}
+
+.feature-card__image {
+    aspect-ratio: 16 / 9;
+    background: var(--color-paper);
+    margin-bottom: var(--space-2);
+    object-fit: cover;
+    order: -1;
+    width: 100%;
+}
+
+.feature-card__title {
+    font-size: var(--text-xl);
+    line-height: 1.4;
+}
+
+.feature-card__text {
+    font-size: var(--text-base);
+    line-height: 1.6;
+}
+
+.feature-card .button {
+    margin-top: auto;
+}

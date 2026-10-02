@@ -1,0 +1,49 @@
+.filter__target {
+    display: block;
+    scroll-margin-top: var(--space-6);
+}
+
+.filter-tabs {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--space-3);
+    list-style: none;
+    margin-bottom: var(--space-7);
+    padding: 0;
+}
+
+.filter-tabs__link {
+    align-items: center;
+    border: 2px solid var(--color-action);
+    border-radius: var(--radius-pill);
+    color: var(--color-action);
+    display: inline-flex;
+    min-height: 2.75rem;
+    padding: var(--space-2) var(--space-5);
+    text-decoration: none;
+    transition:
+        background var(--duration) var(--ease),
+        color var(--duration) var(--ease);
+}
+
+.filter-tabs__link:hover {
+    background: var(--color-lavender);
+    color: var(--color-action-dark);
+}
+
+.filter:not(:has(.filter__target:target)) .filter-tabs__link[href="#all"],
+.filter:has(#all:target) .filter-tabs__link[href="#all"],
+.filter:has(#news:target) .filter-tabs__link[href="#news"],
+.filter:has(#case-studies:target) .filter-tabs__link[href="#case-studies"],
+.filter:has(#white-papers:target) .filter-tabs__link[href="#white-papers"],
+.filter:has(#in-brief:target) .filter-tabs__link[href="#in-brief"] {
+    background: var(--color-action);
+    color: var(--color-white);
+}
+
+.filter:has(#news:target) .filter__list > :not([data-type="news"]),
+.filter:has(#case-studies:target) .filter__list > :not([data-type="case-study"]),
+.filter:has(#white-papers:target) .filter__list > :not([data-type="white-paper"]),
+.filter:has(#in-brief:target) .filter__list > :not([data-type="in-brief"]) {
+    display: none;
+}

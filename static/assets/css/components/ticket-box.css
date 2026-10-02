@@ -1,0 +1,23 @@
+.ticket-box {
+    align-content: start;
+    display: grid;
+    font-size: var(--text-sm);
+    gap: var(--space-4);
+    justify-items: start;
+    line-height: 1.7;
+}
+
+.ticket-box__title {
+    justify-self: stretch;
+    margin-bottom: 0;
+}
+
+.ticket-box__list {
+    list-style: none;
+    padding: 0;
+}
+
+.ticket-box__list li::before {
+    content: "–" / "";
+    padding-right: var(--space-2);
+}
