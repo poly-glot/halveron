@@ -3,7 +3,7 @@ post_types:
     archive: true
     icon: dashicons-welcome-learn-more
     label: Courses
-    rewrite: courses
+    rewrite: { slug: courses, with_front: false }
     singular: Course
     supports: [title, editor, thumbnail, page-attributes]
 

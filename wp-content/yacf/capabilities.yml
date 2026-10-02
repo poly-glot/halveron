@@ -3,7 +3,7 @@ post_types:
     archive: true
     icon: dashicons-admin-tools
     label: Capabilities
-    rewrite: capabilities
+    rewrite: { slug: capabilities, with_front: false }
     singular: Capability
     supports: [title, page-attributes]
 

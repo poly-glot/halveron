@@ -3,7 +3,7 @@ post_types:
     archive: true
     icon: dashicons-building
     label: Sectors
-    rewrite: sectors
+    rewrite: { slug: sectors, with_front: false }
     singular: Sector
     supports: [title, page-attributes]
 

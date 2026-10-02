@@ -2,7 +2,7 @@ post_types:
   event:
     icon: dashicons-calendar-alt
     label: Events
-    rewrite: events
+    rewrite: { slug: events, with_front: false }
     singular: Event
     supports: [title, editor, thumbnail]
 

@@ -47,6 +47,10 @@ field_groups:
         label: Last updated
         type: date
         width: 50
+      notice:
+        label: Demonstration notice
+        rows: 3
+        type: textarea
       updated_label:
         choices: { reviewed: Last reviewed, updated: Last updated }
         default: updated
