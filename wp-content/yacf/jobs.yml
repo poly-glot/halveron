@@ -1,0 +1,46 @@
+post_types:
+  job:
+    icon: dashicons-id
+    label: Jobs
+    public: false
+    rewrite: false
+    show_ui: true
+    singular: Job
+    supports: [title, page-attributes]
+
+field_groups:
+  job_details:
+    post_types: [job]
+    title: Role
+    fields:
+      location:
+        column: true
+        label: Location
+        type: text
+        width: 67
+      job_type:
+        choices: { associate: Associate, graduate: Graduate, permanent: Permanent }
+        column: { sortable: true }
+        default: permanent
+        label: Type
+        type: select
+        width: 33
+      summary:
+        label: Summary
+        rows: 4
+        searchable: true
+        type: textarea
+      responsibilities:
+        fields:
+          text: { label: Item, type: text }
+        label: What you will do
+        type: repeater
+      you_bring:
+        fields:
+          text: { label: Item, type: text }
+        label: What you bring
+        type: repeater
+      note:
+        label: Closing note
+        rows: 2
+        type: textarea

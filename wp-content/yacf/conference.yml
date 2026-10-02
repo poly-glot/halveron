@@ -1,0 +1,105 @@
+field_groups:
+  page_conference:
+    post_types: [page]
+    title: Conference page
+    fields:
+      conference_name:
+        label: Conference name
+        type: text
+        width: 40
+      conference_date:
+        label: Conference date
+        type: date
+        width: 20
+      conference_location:
+        label: Conference venue and place
+        type: text
+        width: 40
+      conference_theme_heading:
+        label: Theme heading
+        type: text
+      conference_theme_text:
+        label: Theme text
+        type: wysiwyg
+      conference_speakers_heading:
+        label: Speakers heading
+        type: text
+      conference_speakers:
+        fields:
+          person: { label: Speaker, post_types: [person], type: post, width: 30 }
+          session: { label: Session title, type: text, width: 70 }
+          text: { label: Session description, rows: 4, type: textarea }
+        label: Speakers
+        type: repeater
+      conference_tickets_heading:
+        label: Tickets heading
+        type: text
+      conference_tickets_text:
+        label: Tickets text
+        rows: 2
+        type: textarea
+      conference_tickets_list:
+        fields:
+          text: { label: Item, type: text }
+        label: Price list
+        type: repeater
+      conference_booking_text:
+        label: Booking line
+        type: wysiwyg
+      conference_book_label:
+        label: Book button label
+        type: text
+      conference_venue_heading:
+        label: Venue heading
+        type: text
+        width: 50
+      conference_venue_image:
+        label: Venue image
+        type: image
+        width: 50
+      conference_venue_text:
+        label: Venue text
+        type: wysiwyg
+      conference_callout_text:
+        label: Booking callout lead
+        rows: 2
+        type: textarea
+      conference_past_heading:
+        label: Past conferences heading
+        type: text
+        width: 50
+      conference_past_image:
+        label: Past conference image
+        type: image
+        width: 50
+      conference_past_title:
+        label: Past conference title
+        type: text
+      conference_past_text:
+        label: Past conference write-up
+        type: wysiwyg
+      conference_past_link_label:
+        label: Past conference link label
+        type: text
+        width: 50
+      conference_past_link:
+        label: Past conference article
+        post_types: [post]
+        type: post
+        width: 50
+      conference_contact_heading:
+        label: Contact heading
+        type: text
+        width: 50
+      conference_contact:
+        label: Contact
+        post_types: [person]
+        type: post
+        width: 50
+      conference_contact_text:
+        label: Contact text
+        rows: 2
+        type: textarea
+      conference_contact_button_label:
+        label: Contact button label
+        type: text

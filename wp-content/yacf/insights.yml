@@ -1,0 +1,64 @@
+field_groups:
+  post_insight:
+    post_types: [post]
+    title: Insight
+    fields:
+      author_profile:
+        column: true
+        label: Author profile
+        post_types: [person]
+        type: post
+        width: 50
+      capabilities:
+        label: Related capabilities
+        multiple: true
+        post_types: [capability]
+        type: post
+        width: 50
+      sectors:
+        label: Sectors
+        multiple: true
+        post_types: [sector]
+        type: post
+        width: 50
+      related:
+        label: Latest related content
+        multiple: true
+        post_types: [post]
+        type: post
+        width: 50
+  post_case_study:
+    post_types: [post]
+    title: Case study results
+    fields:
+      outcomes:
+        fields:
+          figure: { label: Figure, type: text, width: 25 }
+          label: { label: Label, type: text, width: 75 }
+        label: Outcome figures
+        type: repeater
+      outcomes_after:
+        description: Text and pull quote shown after the outcome figures.
+        label: After the figures
+        type: wysiwyg
+  post_white_paper:
+    post_types: [post]
+    title: White paper
+    fields:
+      paper_covers:
+        fields:
+          text: { label: Point, type: text }
+        label: What the paper covers
+        type: repeater
+      paper_audience:
+        label: Who it is for
+        type: wysiwyg
+      paper_details:
+        label: Paper details
+        placeholder: 28 pages, PDF
+        type: text
+        width: 50
+      paper_file:
+        label: Paper file
+        type: file
+        width: 50

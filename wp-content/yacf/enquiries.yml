@@ -1,0 +1,58 @@
+post_types:
+  enquiry:
+    icon: dashicons-email
+    label: Enquiries
+    public: false
+    rewrite: false
+    show_ui: true
+    singular: Enquiry
+    supports: [title]
+
+field_groups:
+  enquiry_details:
+    post_types: [enquiry]
+    title: Enquiry
+    fields:
+      form:
+        choices: { contact: Contact page, download: White-paper download, sector: Sector page }
+        column: { sortable: true }
+        label: Form
+        type: select
+        width: 50
+      source:
+        column: true
+        label: Sent from
+        post_types: [page, sector, post]
+        type: post
+        width: 50
+      name:
+        label: Name
+        type: text
+        width: 50
+      company:
+        column: true
+        label: Company
+        type: text
+        width: 50
+      email:
+        column: true
+        label: Email
+        type: email
+        width: 50
+      phone:
+        label: Phone
+        type: text
+        width: 50
+      message:
+        label: Message
+        rows: 6
+        searchable: true
+        type: textarea
+      interests:
+        label: Areas of interest
+        multiple: true
+        post_types: [capability]
+        type: post
+      newsletter:
+        label: Newsletter sign-up
+        type: true_false

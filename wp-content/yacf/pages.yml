@@ -1,0 +1,155 @@
+field_groups:
+  seo:
+    post_types: [page, post, capability, sector, course, event]
+    title: Search engines
+    fields:
+      meta_description:
+        label: Meta description
+        rows: 2
+        type: textarea
+  page_header:
+    post_types: [page]
+    title: Page header
+    fields:
+      intro:
+        label: Intro
+        rows: 4
+        type: textarea
+      section_title:
+        description: Title in the dark section band (Training, Careers, Forum, Conference).
+        label: Section title
+        type: text
+      section_tabs:
+        fields:
+          label: { label: Label, type: text, width: 40 }
+          url: { label: Link, placeholder: '#about', type: text, width: 60 }
+        label: Section tabs
+        type: repeater
+      statement:
+        label: Header statement
+        rows: 2
+        type: textarea
+      news_heading:
+        label: Latest news heading
+        type: text
+        width: 50
+      news_posts:
+        label: Latest news
+        multiple: true
+        post_types: [post]
+        type: post
+        width: 50
+  page_legal:
+    post_types: [page]
+    title: Legal page
+    fields:
+      last_updated:
+        label: Last updated
+        type: date
+        width: 50
+      updated_label:
+        choices: { reviewed: Last reviewed, updated: Last updated }
+        default: updated
+        label: Date label
+        type: select
+        width: 50
+  page_thinking:
+    post_types: [page]
+    title: Our Thinking
+    fields:
+      thinking_featured:
+        description: Featured slider on Our Thinking and News and insights, one article per type.
+        label: Featured articles
+        multiple: true
+        post_types: [post]
+        type: post
+  page_about:
+    post_types: [page]
+    title: About page
+    fields:
+      about_intro_heading:
+        label: Intro heading
+        type: text
+      about_intro_column_1:
+        label: Intro column 1
+        type: wysiwyg
+      about_intro_column_2:
+        label: Intro column 2
+        type: wysiwyg
+      about_values_heading:
+        label: Values heading
+        type: text
+      about_values:
+        fields:
+          title: { label: Title, type: text, width: 30 }
+          text: { label: Text, rows: 3, type: textarea, width: 70 }
+        label: Values
+        type: repeater
+      about_management_heading:
+        label: Management team heading
+        type: text
+        width: 50
+      about_advisory_heading:
+        label: Advisory panel heading
+        type: text
+        width: 50
+      about_management_intro:
+        label: Management team intro
+        rows: 3
+        type: textarea
+        width: 50
+      about_advisory_intro:
+        label: Advisory panel intro
+        rows: 3
+        type: textarea
+        width: 50
+      about_csr_heading:
+        label: Corporate social responsibility heading
+        type: text
+      about_csr_text:
+        label: Corporate social responsibility text
+        type: wysiwyg
+      about_csr_button_label:
+        label: CSR button label
+        type: text
+        width: 50
+      about_csr_button_url:
+        label: CSR button link
+        placeholder: /contact/
+        type: text
+        width: 50
+  page_contact:
+    post_types: [page]
+    title: Contact page
+    fields:
+      contact_office_heading:
+        label: Head office heading
+        type: text
+        width: 50
+      contact_address_note:
+        label: Address note
+        type: text
+        width: 50
+      contact_directions_heading:
+        label: Directions heading
+        type: text
+      contact_directions:
+        fields:
+          title: { label: Title, type: text }
+          text: { label: Text, type: wysiwyg }
+        label: How to find us
+        type: repeater
+      contact_form_intro:
+        label: Form intro
+        rows: 2
+        type: textarea
+      contact_thank_you_heading:
+        label: Thank-you heading
+        type: text
+      contact_thank_you_text:
+        label: Thank-you text
+        rows: 3
+        type: textarea
+      contact_map:
+        label: Map image
+        type: image

@@ -1,0 +1,52 @@
+post_types:
+  person:
+    icon: dashicons-groups
+    label: People
+    public: false
+    rewrite: false
+    show_ui: true
+    singular: Person
+    supports: [title, thumbnail, page-attributes]
+
+field_groups:
+  person_profile:
+    post_types: [person]
+    title: Profile
+    fields:
+      role:
+        column: { sortable: true }
+        label: Role
+        type: text
+        width: 50
+      group:
+        choices: { advisory: Advisory panel, management: Management team }
+        column: { sortable: true }
+        label: Group
+        type: select
+        width: 25
+      first_name:
+        label: First name
+        type: text
+        width: 25
+      quote:
+        label: How I work
+        rows: 2
+        type: textarea
+      bio:
+        label: Biography
+        rows: 5
+        searchable: true
+        type: textarea
+      phone:
+        label: Phone (display)
+        type: text
+        width: 33
+      phone_href:
+        label: Phone (tel link)
+        type: text
+        width: 33
+      email:
+        column: true
+        label: Email
+        type: email
+        width: 34

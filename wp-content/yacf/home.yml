@@ -1,0 +1,99 @@
+field_groups:
+  page_home:
+    post_types: [page]
+    title: Home page
+    fields:
+      home_hero_line_1:
+        label: Hero line 1
+        type: text
+        width: 50
+      home_hero_line_2:
+        label: Hero line 2
+        type: text
+        width: 50
+      home_hero_text:
+        label: Hero panel sentence
+        rows: 2
+        type: textarea
+      home_hero_button_label:
+        label: Hero button label
+        type: text
+        width: 50
+      home_hero_button_url:
+        label: Hero button link
+        placeholder: /capabilities/
+        type: text
+        width: 50
+      home_intro_heading:
+        label: Intro statement
+        rows: 2
+        type: textarea
+      home_intro_text:
+        label: Intro paragraph
+        rows: 5
+        type: textarea
+      home_feature_cards:
+        fields:
+          image: { label: Image, type: image, width: 25 }
+          title: { label: Title, type: text, width: 75 }
+          text: { label: Text, rows: 3, type: textarea }
+          button_label: { label: Button label, type: text, width: 40 }
+          button_url: { label: Button link, type: text, width: 60 }
+        label: Feature cards
+        type: repeater
+      home_capabilities_heading:
+        label: Capabilities heading
+        type: text
+        width: 50
+      home_capabilities_default:
+        label: Capability tab shown first
+        post_types: [capability]
+        type: post
+        width: 50
+      home_training_heading:
+        label: Training heading
+        type: text
+      home_training_intro:
+        label: Training intro
+        rows: 4
+        type: textarea
+      home_training_courses:
+        label: Open training cards
+        multiple: true
+        post_types: [course]
+        type: post
+      home_custom_text:
+        label: Custom training text
+        rows: 3
+        type: textarea
+      home_custom_button_label:
+        label: Custom training button label
+        type: text
+        width: 50
+      home_custom_button_url:
+        label: Custom training button link
+        placeholder: /training/#custom-training
+        type: text
+        width: 50
+      home_clients_heading:
+        label: Clients heading
+        type: text
+      home_clients_button_label:
+        label: Clients button label
+        type: text
+        width: 50
+      home_clients_button_url:
+        label: Clients button link
+        placeholder: /thinking/#case-studies
+        type: text
+        width: 50
+      home_thinking_heading:
+        label: Thinking heading
+        type: text
+        width: 50
+      home_thinking_posts:
+        label: Thinking cards
+        multiple: true
+        post_types: [post]
+        type: post
+        width: 50

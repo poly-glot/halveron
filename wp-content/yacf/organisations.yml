@@ -1,0 +1,33 @@
+post_types:
+  organisation:
+    icon: dashicons-portfolio
+    label: Organisations
+    public: false
+    rewrite: false
+    show_ui: true
+    singular: Organisation
+    supports: [title, page-attributes]
+
+field_groups:
+  organisation_details:
+    post_types: [organisation]
+    title: Organisation
+    fields:
+      kind:
+        choices: { accrediting: Accrediting or academic partner, client: Client, forum_member: Forum member, technology: Technology partner }
+        column: { sortable: true }
+        label: Kind
+        type: select
+        width: 50
+      logo:
+        label: Logo
+        type: image
+        width: 50
+      descriptor:
+        label: Descriptor
+        rows: 2
+        searchable: true
+        type: textarea
+      role:
+        label: Role with Halveron
+        type: text

@@ -1,0 +1,67 @@
+field_groups:
+  page_forum:
+    post_types: [page]
+    title: Forum page
+    fields:
+      forum_about_heading:
+        label: About heading
+        type: text
+      forum_about_text:
+        label: About text
+        type: wysiwyg
+      forum_next_heading:
+        label: Next event heading
+        type: text
+        width: 50
+      forum_next_event:
+        label: Next event
+        post_types: [event]
+        type: post
+        width: 50
+      forum_next_text:
+        label: Next event teaser
+        rows: 3
+        type: textarea
+      forum_past_heading:
+        label: Past events heading
+        type: text
+        width: 50
+      forum_past_events:
+        label: Past events
+        multiple: true
+        post_types: [event]
+        type: post
+        width: 50
+      forum_membership_heading:
+        label: Membership heading
+        type: text
+      forum_membership_text:
+        label: Membership text
+        type: wysiwyg
+      forum_membership_button_label:
+        label: Membership button label
+        type: text
+        width: 50
+      forum_membership_subject:
+        label: Membership email subject
+        type: text
+        width: 50
+      forum_contact_heading:
+        label: Contact heading
+        type: text
+        width: 50
+      forum_contact:
+        label: Contact
+        post_types: [person]
+        type: post
+        width: 50
+      forum_contact_text:
+        label: Contact text
+        rows: 2
+        type: textarea
+      forum_members_heading:
+        label: Members heading
+        type: text
+      forum_members_intro:
+        label: Members intro (visually hidden)
+        type: text

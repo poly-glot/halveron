@@ -1,0 +1,206 @@
+options_pages:
+  site_settings:
+    icon: dashicons-admin-settings
+    title: Site settings
+
+field_groups:
+  site_settings_contact:
+    options_pages: [site_settings]
+    title: Contact details
+    fields:
+      phone:
+        label: Main phone (display)
+        type: text
+        width: 25
+      phone_href:
+        label: Main phone (tel link)
+        type: text
+        width: 25
+      training_phone:
+        label: Training phone (display)
+        type: text
+        width: 25
+      training_phone_href:
+        label: Training phone (tel link)
+        type: text
+        width: 25
+      email:
+        label: General email
+        type: email
+        width: 20
+      training_email:
+        label: Training email
+        type: email
+        width: 20
+      careers_email:
+        label: Careers email
+        type: email
+        width: 20
+      forum_email:
+        label: Forum email
+        type: email
+        width: 20
+      events_email:
+        label: Events email
+        type: email
+        width: 20
+      address:
+        description: One line per row; the first line is the legal name.
+        label: Head office address
+        rows: 6
+        type: textarea
+        width: 50
+      legal_name:
+        label: Legal name
+        type: text
+        width: 25
+      company_number:
+        label: Company number
+        type: text
+        width: 25
+  site_settings_social:
+    options_pages: [site_settings]
+    title: Social
+    fields:
+      social:
+        fields:
+          label: { label: Accessible name, type: text, width: 40 }
+          icon: { choices: { linkedin: LinkedIn, x: X, youtube: YouTube }, label: Icon, type: select, width: 20 }
+          url: { label: URL, type: url, width: 40 }
+        label: Social links
+        type: repeater
+  site_settings_footer:
+    options_pages: [site_settings]
+    title: Footer
+    fields:
+      footer_notice:
+        label: Fictional-firm notice
+        rows: 3
+        type: textarea
+      footer_note:
+        label: Closing small print
+        type: text
+      forum_panel_heading:
+        label: Forum panel heading
+        type: text
+        width: 50
+      forum_panel_button_label:
+        label: Forum panel button label
+        type: text
+        width: 50
+      forum_panel_text:
+        label: Forum panel text
+        rows: 3
+        type: textarea
+  site_settings_newsletter:
+    options_pages: [site_settings]
+    title: Newsletter strip
+    fields:
+      newsletter_heading:
+        label: Heading
+        type: text
+      newsletter_text:
+        label: Supporting line
+        rows: 2
+        type: textarea
+      newsletter_hint:
+        label: Small print
+        type: text
+  site_settings_forms:
+    options_pages: [site_settings]
+    title: Forms and articles
+    fields:
+      form_note:
+        label: Fictional-data note under every form
+        rows: 2
+        type: textarea
+      insight_disclaimer:
+        label: Article disclaimer
+        rows: 2
+        type: textarea
+      download_heading:
+        label: White-paper form heading
+        type: text
+      download_intro:
+        description: "{title} is replaced by the paper title in italics."
+        label: White-paper form intro
+        rows: 2
+        type: textarea
+      download_privacy:
+        label: White-paper form privacy line
+        type: wysiwyg
+      download_note:
+        label: White-paper form demonstration note
+        type: text
+  site_settings_archives:
+    options_pages: [site_settings]
+    title: Archives and search
+    fields:
+      capabilities_archive_title:
+        default: Our capabilities
+        label: Capabilities archive title
+        type: text
+      capabilities_archive_intro:
+        label: Capabilities archive intro
+        rows: 5
+        type: textarea
+      capabilities_archive_description:
+        label: Capabilities archive meta description
+        rows: 2
+        type: textarea
+      capabilities_wheel_title:
+        label: Wheel title
+        type: text
+        width: 50
+      capabilities_wheel_hub:
+        description: One line per row.
+        label: Wheel hub label
+        rows: 2
+        type: textarea
+        width: 50
+      capabilities_wheel_description:
+        label: Wheel description
+        rows: 3
+        type: textarea
+      sectors_archive_title:
+        default: Our sectors
+        label: Sectors archive title
+        type: text
+      sectors_archive_intro:
+        label: Sectors archive intro
+        rows: 5
+        type: textarea
+      sectors_archive_description:
+        label: Sectors archive meta description
+        rows: 2
+        type: textarea
+      courses_archive_title:
+        default: Courses
+        label: Courses archive title
+        type: text
+      courses_archive_tabs:
+        fields:
+          label: { label: Label, type: text, width: 40 }
+          url: { label: Link, type: text, width: 45 }
+          current: { label: Current, type: true_false, width: 15 }
+        label: Courses archive section tabs
+        type: repeater
+      courses_archive_intro:
+        label: Courses archive intro
+        rows: 4
+        type: textarea
+      courses_archive_description:
+        label: Courses archive meta description
+        rows: 2
+        type: textarea
+      courses_enquiries_heading:
+        label: Course enquiries heading
+        type: text
+      courses_enquiries_text:
+        label: Course enquiries text
+        rows: 2
+        type: textarea
+      search_description:
+        label: Search page meta description
+        rows: 2
+        type: textarea

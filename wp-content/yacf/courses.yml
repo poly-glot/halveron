@@ -1,0 +1,78 @@
+post_types:
+  course:
+    archive: true
+    icon: dashicons-welcome-learn-more
+    label: Courses
+    rewrite: courses
+    singular: Course
+    supports: [title, editor, thumbnail, page-attributes]
+
+field_groups:
+  course_details:
+    post_types: [course]
+    title: Course
+    fields:
+      course_type:
+        choices: { custom: Custom training, open: Open training }
+        column: { sortable: true }
+        default: open
+        label: Type
+        type: select
+        width: 33
+      next_date:
+        column: { sortable: true }
+        label: Next course (open only)
+        type: date
+        width: 33
+      card_line:
+        label: Card line (custom only)
+        type: text
+        width: 34
+      accreditation:
+        label: Accreditation
+        type: text
+      schedule:
+        label: Schedule (open only)
+        type: text
+        width: 50
+      duration:
+        label: Duration
+        type: text
+        width: 50
+      price:
+        label: Price (open only)
+        type: text
+        width: 50
+      location:
+        label: Location
+        type: text
+        width: 50
+      summary:
+        label: Card summary
+        rows: 3
+        searchable: true
+        type: textarea
+      who_for:
+        label: Who it is for
+        rows: 3
+        type: textarea
+      modules_lead:
+        label: Modules lead line
+        type: text
+      modules:
+        fields:
+          title: { label: Title, type: text, width: 30 }
+          text: { label: Text, rows: 4, type: textarea, width: 70 }
+        label: Modules
+        type: repeater
+      contact:
+        label: Contact
+        post_types: [person]
+        type: post
+        width: 50
+      related:
+        label: Latest related content
+        multiple: true
+        post_types: [post]
+        type: post
+        width: 50

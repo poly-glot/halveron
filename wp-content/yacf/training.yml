@@ -1,0 +1,71 @@
+field_groups:
+  page_training:
+    post_types: [page]
+    title: Learning and development page
+    fields:
+      training_courses_heading:
+        label: Courses heading
+        type: text
+      training_courses_intro:
+        label: Courses intro
+        rows: 4
+        type: textarea
+      training_open_text:
+        label: Open training text
+        rows: 3
+        type: textarea
+      training_custom_text:
+        label: Custom training text
+        rows: 3
+        type: textarea
+      training_custom_list:
+        description: Also shown in the home training band.
+        fields:
+          text: { label: Item, type: text }
+        label: Custom training areas
+        type: repeater
+      training_custom_button_label:
+        label: Custom training button label
+        type: text
+        width: 50
+      training_custom_button_url:
+        label: Custom training button link
+        placeholder: mailto:training@halveron.junaid.guru
+        type: text
+        width: 50
+      training_clients_heading:
+        label: Clients heading
+        type: text
+      training_facts_heading:
+        label: Facts heading
+        type: text
+      training_facts_intro:
+        label: Facts intro
+        rows: 3
+        type: textarea
+      training_stats:
+        fields:
+          figure: { label: Figure, type: text, width: 25 }
+          label: { label: Caption, type: text, width: 75 }
+        label: Stat tiles
+        type: repeater
+      training_quote:
+        label: Delegate quote
+        rows: 3
+        type: textarea
+        width: 60
+      training_quote_cite:
+        label: Delegate quote attribution
+        type: text
+        width: 40
+      training_image:
+        label: Image tile
+        type: image
+        width: 40
+      training_image_caption:
+        label: Image tile caption
+        type: text
+        width: 60
+      training_partners_heading:
+        label: Partners heading
+        type: text

@@ -1,0 +1,62 @@
+field_groups:
+  page_careers:
+    post_types: [page]
+    title: Careers page
+    fields:
+      careers_looking_heading:
+        label: What we're looking for heading
+        type: text
+      careers_looking_text:
+        label: What we're looking for text
+        type: wysiwyg
+      careers_work_heading:
+        label: What it is like heading
+        type: text
+      careers_work_columns:
+        fields:
+          title: { label: Title, type: text, width: 30 }
+          text: { label: Text, rows: 5, type: textarea, width: 70 }
+        label: What it is like to work here
+        type: repeater
+      careers_aside_heading:
+        label: Aside heading
+        type: text
+        width: 50
+      careers_aside_subheading:
+        label: Aside sub-heading
+        type: text
+        width: 50
+      careers_aside_text:
+        label: Aside text
+        type: wysiwyg
+      careers_aside_button_label:
+        label: Aside button label
+        type: text
+      careers_voices_heading:
+        label: Hear from our people heading
+        type: text
+      careers_voices:
+        fields:
+          person: { label: Person, post_types: [person], type: post, width: 30 }
+          quote: { label: Quote, rows: 3, type: textarea, width: 70 }
+        label: Hear from our people
+        type: repeater
+      careers_schools_heading:
+        label: Business schools heading
+        type: text
+      careers_schools_text:
+        label: Business schools text
+        type: wysiwyg
+      careers_schools_link_label:
+        label: Business schools link label
+        type: text
+  page_opportunities:
+    post_types: [page]
+    title: Current opportunities page
+    fields:
+      opportunities_intro:
+        label: Intro
+        type: wysiwyg
+      opportunities_lead:
+        label: List lead line
+        type: text

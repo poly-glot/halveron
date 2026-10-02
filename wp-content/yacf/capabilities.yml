@@ -1,0 +1,105 @@
+post_types:
+  capability:
+    archive: true
+    icon: dashicons-admin-tools
+    label: Capabilities
+    rewrite: capabilities
+    singular: Capability
+    supports: [title, page-attributes]
+
+field_groups:
+  capability_details:
+    post_types: [capability]
+    title: Capability
+    fields:
+      summary:
+        label: Card summary
+        rows: 3
+        searchable: true
+        type: textarea
+      intro:
+        description: Media panel on the capability page and the home capabilities tab panel.
+        label: Intro
+        rows: 4
+        searchable: true
+        type: textarea
+      image:
+        label: Media image
+        type: image
+      tab_button:
+        description: Button under the home capabilities tab panel.
+        label: Home tab button
+        type: text
+        width: 50
+      wheel_label:
+        description: One line per row of the label in the capabilities wheel.
+        label: Wheel label
+        rows: 3
+        type: textarea
+        width: 50
+      body:
+        label: A framework for delivering results
+        searchable: true
+        type: wysiwyg
+      quote:
+        label: Pull quote
+        rows: 3
+        type: textarea
+        width: 60
+      quote_attribution:
+        label: Quote attribution
+        type: text
+        width: 40
+      approach:
+        fields:
+          title: { label: Title, type: text, width: 30 }
+          text: { label: Text, rows: 3, type: textarea, width: 70 }
+        label: Our approach
+        type: repeater
+      contact:
+        column: true
+        label: Contact
+        post_types: [person]
+        type: post
+        width: 50
+      related:
+        label: Latest related content
+        multiple: true
+        post_types: [post]
+        type: post
+        width: 50
+  capability_diagram:
+    post_types: [capability]
+    title: Delivery diagram and partners
+    fields:
+      diagram_title:
+        label: Diagram title
+        type: text
+        width: 50
+      diagram_hub:
+        description: One line per row of the hub label.
+        label: Diagram hub label
+        rows: 2
+        type: textarea
+        width: 50
+      diagram_description:
+        label: Diagram description
+        rows: 3
+        type: textarea
+      diagram_steps:
+        fields:
+          label: { label: Step, type: text }
+        label: Diagram steps
+        type: repeater
+      partners_heading:
+        label: Partner network heading
+        type: text
+      partners_intro:
+        label: Partner network intro
+        rows: 2
+        type: textarea
+      partners:
+        label: Partners
+        multiple: true
+        post_types: [organisation]
+        type: post

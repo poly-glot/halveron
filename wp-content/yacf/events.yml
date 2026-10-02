@@ -1,0 +1,46 @@
+post_types:
+  event:
+    icon: dashicons-calendar-alt
+    label: Events
+    rewrite: events
+    singular: Event
+    supports: [title, editor, thumbnail]
+
+field_groups:
+  event_details:
+    post_types: [event]
+    title: Event
+    fields:
+      event_date:
+        column: { sortable: true }
+        label: Date
+        type: date
+        width: 33
+      time:
+        label: Time (upcoming only)
+        type: text
+        width: 33
+      host_organisation:
+        column: true
+        label: Host
+        post_types: [organisation]
+        type: post
+        width: 34
+      venue:
+        label: Venue
+        rows: 3
+        type: textarea
+      summary:
+        label: Summary
+        rows: 3
+        searchable: true
+        type: textarea
+      agenda:
+        fields:
+          time: { label: Time, type: text, width: 20 }
+          item: { label: Item, type: text, width: 80 }
+        label: Agenda (upcoming only)
+        type: repeater
+      registration:
+        label: Registration note (upcoming only)
+        type: wysiwyg

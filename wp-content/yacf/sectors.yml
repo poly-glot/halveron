@@ -1,0 +1,68 @@
+post_types:
+  sector:
+    archive: true
+    icon: dashicons-building
+    label: Sectors
+    rewrite: sectors
+    singular: Sector
+    supports: [title, page-attributes]
+
+field_groups:
+  sector_details:
+    post_types: [sector]
+    title: Sector
+    fields:
+      summary:
+        label: Card summary
+        rows: 3
+        searchable: true
+        type: textarea
+      intro:
+        label: Intro
+        rows: 4
+        searchable: true
+        type: textarea
+      image:
+        label: Card and media image
+        type: image
+      body:
+        label: A framework for delivering results
+        searchable: true
+        type: wysiwyg
+      quote:
+        label: Pull quote
+        rows: 3
+        type: textarea
+        width: 60
+      quote_attribution:
+        label: Quote attribution
+        type: text
+        width: 40
+      form_intro:
+        label: Enquiry form intro
+        rows: 2
+        type: textarea
+      contact:
+        column: true
+        label: Contact
+        post_types: [person]
+        type: post
+        width: 50
+      clients:
+        label: Client logos
+        multiple: true
+        post_types: [organisation]
+        type: post
+        width: 50
+      case_studies:
+        label: Case studies
+        multiple: true
+        post_types: [post]
+        type: post
+        width: 50
+      related:
+        label: Latest related content
+        multiple: true
+        post_types: [post]
+        type: post
+        width: 50
