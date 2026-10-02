@@ -6,6 +6,8 @@ require_once get_theme_file_path( 'inc/navigation.php' );
 require_once get_theme_file_path( 'inc/forms.php' );
 
 function halveron_setup(): void {
+	add_rewrite_rule( '^search/?$', 'index.php?s=', 'top' );
+
 	add_theme_support( 'title-tag' );
 	add_theme_support( 'post-thumbnails' );
 	add_theme_support( 'html5', array( 'search-form', 'gallery', 'caption', 'style', 'script' ) );
@@ -128,16 +130,13 @@ function halveron_main_query( WP_Query $query ): void {
 add_action( 'pre_get_posts', 'halveron_main_query' );
 
 function halveron_search_request( array $vars ): array {
-	$on_search_path = 'search' === ( $vars['pagename'] ?? '' );
-
-	if ( ! $on_search_path && ! isset( $vars['s'] ) ) {
+	if ( ! isset( $vars['s'] ) ) {
 		return $vars;
 	}
 
-	$query = trim( (string) ( $vars['s'] ?? '' ) );
-	$term  = '' === $query ? ' ' : $query;
+	$query = trim( (string) $vars['s'] );
 
-	return $on_search_path ? array( 's' => $term ) : array_merge( $vars, array( 's' => $term ) );
+	return array_merge( $vars, array( 's' => '' === $query ? ' ' : $query ) );
 }
 
 add_filter( 'request', 'halveron_search_request' );
