@@ -1,0 +1,10 @@
+.devcontainer
+.git
+.github
+.idea
+Dockerfile
+README.md
+docs/
+static/
+tasks/
+wp-content/uploads
