@@ -1,0 +1,338 @@
+[
+    {
+        "title": "Halveron Consulting",
+        "type": "Page",
+        "excerpt": "Halveron Consulting helps UK service organisations run simpler operations and give customers a better experience, through consulting, accredited training and a peer forum for operations leaders.",
+        "url": "/"
+    },
+    {
+        "title": "Our capabilities",
+        "type": "Page",
+        "excerpt": "Eight ways Halveron helps UK service organisations improve operations and customer experience, from operating model design and process improvement to digital services and training.",
+        "url": "/capabilities/"
+    },
+    {
+        "title": "Our sectors",
+        "type": "Page",
+        "excerpt": "Halveron works with banks, insurers, utilities, travel operators, universities, public bodies, health providers and outsourcers across the UK.",
+        "url": "/sectors/"
+    },
+    {
+        "title": "Our Thinking",
+        "type": "Page",
+        "excerpt": "What we learn on client work, written down while it is still useful. Our news covers the firm, the Lean Service Forum and our conference. Case studies show what changed for real organisations, with the names removed. White papers go deeper on one question, and the In brief notes fit a single idea on a page.",
+        "url": "/thinking/"
+    },
+    {
+        "title": "News and insights",
+        "type": "Page",
+        "excerpt": "Every article, case study, white paper and In brief note we have published, newest first. Use the tabs to show one type at a time, or read straight down the list.",
+        "url": "/news/"
+    },
+    {
+        "title": "About us",
+        "type": "Page",
+        "excerpt": "Halveron is an independent operations and customer-experience consultancy based in Oxfordshire, working with service organisations across the UK since 2009.",
+        "url": "/about/"
+    },
+    {
+        "title": "Contact us",
+        "type": "Page",
+        "excerpt": "Contact Halveron Consulting by phone, email or the form on this page. Our head office is in Woodstock, Oxfordshire.",
+        "url": "/contact/"
+    },
+    {
+        "title": "Halveron Learning & Development",
+        "type": "Page",
+        "excerpt": "Practical, accredited training for the people who run service operations, taught by consultants who use the methods every week.",
+        "url": "/training/"
+    },
+    {
+        "title": "Training courses",
+        "type": "Page",
+        "excerpt": "We run three accredited open courses through the year and two programmes designed for a single organisation. Every course is practical: delegates bring a real problem from work and leave with a plan to solve it.",
+        "url": "/courses/"
+    },
+    {
+        "title": "Halveron Careers",
+        "type": "Page",
+        "excerpt": "We hire people who have run service operations, not only advised on them. You will understand operations management, ideally in the service sector, and be comfortable with numbers: demand, capacity, cost and time.",
+        "url": "/careers/"
+    },
+    {
+        "title": "Current opportunities",
+        "type": "Page",
+        "excerpt": "We are recruiting for six roles across consulting, training and our graduate programme. Each one involves working closely with clients and with each other, and each offers a clear route to accreditation and promotion.",
+        "url": "/careers/opportunities/"
+    },
+    {
+        "title": "Lean Service Forum",
+        "type": "Page",
+        "excerpt": "The Lean Service Forum is a peer network for people who run service operations. Members are operations directors, heads of customer service and improvement leads from banks, insurers, utilities, rail and ferry operators, universities, councils and health providers.",
+        "url": "/forum/"
+    },
+    {
+        "title": "Halveron Conference",
+        "type": "Page",
+        "excerpt": "Trust in a service is built in ordinary moments: a letter that makes sense, a promised call that comes, a problem fixed the first time. It is lost the same way.",
+        "url": "/conference/"
+    },
+    {
+        "title": "Privacy notice",
+        "type": "Page",
+        "excerpt": "How Halveron Consulting would handle personal information, and why this demonstration website collects none.",
+        "url": "/privacy/"
+    },
+    {
+        "title": "Cookie notice",
+        "type": "Page",
+        "excerpt": "This website sets no cookies of its own.",
+        "url": "/cookies/"
+    },
+    {
+        "title": "Terms of use",
+        "type": "Page",
+        "excerpt": "The terms that apply when you use the Halveron Consulting demonstration website.",
+        "url": "/terms/"
+    },
+    {
+        "title": "Accessibility statement",
+        "type": "Page",
+        "excerpt": "How we have built this website to meet WCAG 2.2 at Level AA, how we test it, and how to report a problem.",
+        "url": "/accessibility/"
+    },
+    {
+        "title": "Sitemap",
+        "type": "Page",
+        "excerpt": "Every page on the Halveron Consulting website.",
+        "url": "/sitemap/"
+    },
+    {
+        "title": "Business transformation",
+        "type": "Capability",
+        "excerpt": "Transformation succeeds when the destination is clear, each stage pays back early and someone owns every benefit. We help leadership teams plan, govern and deliver change that customers and staff notice for the right reasons.",
+        "url": "/capabilities/business-transformation/"
+    },
+    {
+        "title": "Operations strategy and implementation",
+        "type": "Capability",
+        "excerpt": "Your operations strategy decides much of what you spend and how customers feel about you. We connect it to choices about capacity, channels, locations and sourcing, then help you put those choices into practice.",
+        "url": "/capabilities/operations-strategy/"
+    },
+    {
+        "title": "Operating model design",
+        "type": "Capability",
+        "excerpt": "An operating model is how your organisation turns strategy into service every day. We design structures, roles, processes and systems around what customers need, and test the design before anyone moves desk.",
+        "url": "/capabilities/operating-model-design/"
+    },
+    {
+        "title": "Organisational effectiveness",
+        "type": "Capability",
+        "excerpt": "Good people in a poorly designed organisation spend their days working around it. We look at structure, decision rights and management routines, and help you make good work easier to do.",
+        "url": "/capabilities/organisational-effectiveness/"
+    },
+    {
+        "title": "Multichannel customer experience",
+        "type": "Capability",
+        "excerpt": "Customers move between phone, web, app and letter without a second thought. We map their real journeys, find where they break and redesign them so each contact moves the customer forward.",
+        "url": "/capabilities/customer-experience/"
+    },
+    {
+        "title": "Process improvement",
+        "type": "Capability",
+        "excerpt": "Most service processes carry work that customers never asked for: rework, chasing and duplicate checks. We use lean and systems thinking, with your own teams, to remove it and keep it out.",
+        "url": "/capabilities/process-improvement/"
+    },
+    {
+        "title": "Digital at pace",
+        "type": "Capability",
+        "excerpt": "We design digital services around redesigned work, not old processes. Working with your technology teams and selected partners, we prototype and test with real customers in weeks, then help you build what works.",
+        "url": "/capabilities/digital-at-pace/"
+    },
+    {
+        "title": "Learning and development",
+        "type": "Capability",
+        "excerpt": "Lasting improvement depends on people who can lead it. Our accredited open courses, custom programmes and on-the-job coaching build practical skills in lean, service design and operational management, and leave your teams able to lead change themselves.",
+        "url": "/capabilities/learning-and-development/"
+    },
+    {
+        "title": "Banking",
+        "type": "Sector",
+        "excerpt": "Banks and building societies are moving customers online while keeping branches and phone lines that people trust. We help them cut the cost of serving customers without losing the relationships that set them apart.",
+        "url": "/sectors/banking/"
+    },
+    {
+        "title": "Insurance",
+        "type": "Sector",
+        "excerpt": "Insurers are judged at the moment of a claim. We help general insurers and mutuals make claims, renewals and service journeys clearer, quicker and less costly to run.",
+        "url": "/sectors/insurance/"
+    },
+    {
+        "title": "Utilities",
+        "type": "Sector",
+        "excerpt": "Water and energy companies serve every household, including the most vulnerable. We help them get billing, metering, complaints and incident response right the first time.",
+        "url": "/sectors/utilities/"
+    },
+    {
+        "title": "Travel",
+        "type": "Sector",
+        "excerpt": "Travel operators live with peaks, disruption and customers on the move. We help rail, coach, airline and holiday businesses handle both the ordinary day and the very bad one.",
+        "url": "/sectors/travel/"
+    },
+    {
+        "title": "Education",
+        "type": "Sector",
+        "excerpt": "Universities and colleges run complex services for students, staff and researchers on tight budgets. We help them simplify student services, admissions and professional services without losing what makes each institution distinctive.",
+        "url": "/sectors/education/"
+    },
+    {
+        "title": "Public sector",
+        "type": "Sector",
+        "excerpt": "Councils and public bodies face rising demand with less money every year. We help them redesign services around residents, build their own improvement skills and deliver change that lasts.",
+        "url": "/sectors/public-sector/"
+    },
+    {
+        "title": "Healthcare",
+        "type": "Sector",
+        "excerpt": "Health providers spend a large share of clinical time on administration. We help hospital and community services simplify booking, referrals and patient communication, so that staff can spend more time on care.",
+        "url": "/sectors/healthcare/"
+    },
+    {
+        "title": "Managed and contract services",
+        "type": "Sector",
+        "excerpt": "Outsourcers live or die by contract margins and service levels. We help managed-service providers design operations that meet their commitments, protect margin and win renewals.",
+        "url": "/sectors/managed-services/"
+    },
+    {
+        "title": "What we heard at the Future of Service Conference 2026",
+        "type": "News",
+        "excerpt": "Operations and customer leaders spent a day at the Future of Service Conference 2026. Here is what they told us about demand, staffing and the limits of automation.",
+        "url": "/thinking/future-of-service-2026/"
+    },
+    {
+        "title": "Start with demand, not capacity",
+        "type": "In brief",
+        "excerpt": "Most operations plan for the staff they have. Plan instead for the demand that arrives, and you will often find you need less capacity than you thought.",
+        "url": "/thinking/start-with-demand/"
+    },
+    {
+        "title": "How to make regulation work for you",
+        "type": "White paper",
+        "excerpt": "Most service firms treat regulation as a cost to contain. This paper argues that outcome-based rules give operations leaders a strong case for simpler processes and less rework.",
+        "url": "/thinking/regulation-work-for-you/"
+    },
+    {
+        "title": "Halveron opens a service academy for public-sector leaders",
+        "type": "News",
+        "excerpt": "A ten-month programme for managers who run public services, built around a live improvement project in each delegate's own organisation. The first cohort starts in January 2027.",
+        "url": "/thinking/public-sector-service-academy/"
+    },
+    {
+        "title": "Understanding the customer journey at a mutual insurer",
+        "type": "Case study",
+        "excerpt": "A mutual insurer wanted to know why its customers kept calling back. We walked the claims journey with them and redesigned the steps that caused most repeat contact.",
+        "url": "/thinking/customer-journey-insurer/"
+    },
+    {
+        "title": "Our 2026 contact-centre demand report",
+        "type": "News",
+        "excerpt": "We analysed 18.4 million customer contacts across 31 UK organisations. Contact volumes are falling slightly, but each contact is harder, and digital channels are absorbing demand rather than removing it.",
+        "url": "/thinking/contact-centre-demand-report/"
+    },
+    {
+        "title": "Failure demand on one page",
+        "type": "In brief",
+        "excerpt": "Failure demand is the work customers create when we fail to do something, or do it wrong. In most service operations it is a large cost, and a controllable one.",
+        "url": "/thinking/failure-demand-explained/"
+    },
+    {
+        "title": "Improving complaints handling at a water utility",
+        "type": "Case study",
+        "excerpt": "Complaints at a regional water company were rising and taking weeks to close. We helped frontline teams resolve most at first contact and fix the causes behind them.",
+        "url": "/thinking/complaints-handling-utility/"
+    },
+    {
+        "title": "Sector review: technology in travel operations",
+        "type": "White paper",
+        "excerpt": "Our sector review asks where automation, self-service and better data have helped travel operators, and where they simply moved the work somewhere else.",
+        "url": "/thinking/technology-in-travel/"
+    },
+    {
+        "title": "The Lean Service Forum reaches 100 member organisations",
+        "type": "News",
+        "excerpt": "With the building society that hosted our June meeting joining as its hundredth member, the Lean Service Forum now brings together operations leaders from 100 organisations.",
+        "url": "/thinking/lean-forum-100-members/"
+    },
+    {
+        "title": "Driving back-office productivity at a regional bank",
+        "type": "Case study",
+        "excerpt": "A regional bank's back office was carrying an eleven-day backlog and heavy overtime. Better planning, standard work and daily team routines cleared it within four months.",
+        "url": "/thinking/back-office-productivity-bank/"
+    },
+    {
+        "title": "Coaching hybrid operations teams",
+        "type": "In brief",
+        "excerpt": "When half the team works from home, team leaders lose the quick desk-side conversations that did most of their coaching. Here is how to put them back.",
+        "url": "/thinking/coaching-hybrid-teams/"
+    },
+    {
+        "title": "Improving change-delivery capability in a county council",
+        "type": "Case study",
+        "excerpt": "A county council had 64 change projects, a savings target and no common way to deliver them. We helped it cut the list, agree one method and train its people.",
+        "url": "/thinking/change-delivery-council/"
+    },
+    {
+        "title": "Lean Practitioner",
+        "type": "Course",
+        "excerpt": "Five days that teach you to see a service the way your customers do. You will learn to measure demand, map value and run improvement experiments, then apply each tool to a live problem you bring from work.",
+        "url": "/courses/lean-practitioner/"
+    },
+    {
+        "title": "Service Excellence",
+        "type": "Course",
+        "excerpt": "Three days for managers who lead customer-facing teams. You will learn how to design a service around what matters to customers, set measures that drive the right behaviour, and coach your team to handle the unexpected with confidence.",
+        "url": "/courses/service-excellence/"
+    },
+    {
+        "title": "Operational Coaching",
+        "type": "Course",
+        "excerpt": "Two days on coaching people while the work is happening, not just in one-to-ones. You will practise short, frequent coaching conversations that improve how your team handles customers, including team members who work from home.",
+        "url": "/courses/operational-coaching/"
+    },
+    {
+        "title": "Operations Management",
+        "type": "Course",
+        "excerpt": "A programme for new and developing operations managers in a single organisation. It covers planning, performance, coaching and problem-solving, using your own data and processes as the material for every module.",
+        "url": "/courses/operations-management/"
+    },
+    {
+        "title": "Stakeholder Engagement",
+        "type": "Course",
+        "excerpt": "A practical course for people leading change who need others to agree, fund or adopt it. Delegates map the people who matter to their own project and plan how to win and keep their support.",
+        "url": "/courses/stakeholder-engagement/"
+    },
+    {
+        "title": "Lean Service Forum at Northwyn Rail",
+        "type": "Event",
+        "excerpt": "Members visit Northwyn Rail's control centre to see how it keeps passengers informed when the timetable fails, followed by a case session and peer clinic.",
+        "url": "/events/forum-november-2026/"
+    },
+    {
+        "title": "Lean Service Forum at Vellmore Building Society",
+        "type": "Event",
+        "excerpt": "Thirty-four members spent the day at Vellmore Building Society in Bristol, seeing how the society cut handoffs in its mortgage applications from eleven to four.",
+        "url": "/events/forum-june-2026/"
+    },
+    {
+        "title": "Lean Service Forum at Calderbrook Water",
+        "type": "Event",
+        "excerpt": "Members visited Calderbrook Water in Leeds to see how its contact centre and field-scheduling teams now plan together, cutting missed appointments by a third.",
+        "url": "/events/forum-march-2026/"
+    },
+    {
+        "title": "Future of Service Conference 2027",
+        "type": "Event",
+        "excerpt": "Wednesday 3 March 2027, The Assembly Rooms, Finsbury, London. Trust in a service is built in ordinary moments: a letter that makes sense, a promised call that comes, a problem fixed the first time.",
+        "url": "/conference/#next-conference"
+    }
+]
