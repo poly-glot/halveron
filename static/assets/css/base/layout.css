@@ -142,6 +142,11 @@
     gap: var(--space-5);
 }
 
+.stack > .button,
+.stack > .text-link {
+    justify-self: start;
+}
+
 .with-aside {
     display: grid;
     gap: var(--space-8) var(--grid-gap);

@@ -117,22 +117,30 @@
 }
 
 .page-index__link::before {
-    background: var(--color-muted);
+    background: var(--color-white);
     border-radius: 50%;
+    box-shadow:
+        0 0 0 2px var(--color-muted),
+        0 1px 4px 1px var(--color-overlay);
     content: "";
-    height: 1.125rem;
+    height: 1rem;
     transition: background var(--duration) var(--ease);
-    width: 1.125rem;
+    width: 1rem;
 }
 
 .page-index__link:hover::before,
-.page-index__link:focus-visible::before,
-.page-index__link--current::before {
+.page-index__link:focus-visible::before {
     background: var(--color-purple);
 }
 
 .page-index__link--current::before {
-    box-shadow: 0 0 0 4px var(--color-white), 0 0 0 5px var(--color-purple);
+    background: var(--color-purple);
+    box-shadow:
+        0 0 0 3px var(--color-white),
+        0 0 0 5px var(--color-purple),
+        0 1px 6px 4px var(--color-overlay);
+    height: 1.125rem;
+    width: 1.125rem;
 }
 
 .page-index__link:is(:hover, :focus-visible) .page-index__label {
