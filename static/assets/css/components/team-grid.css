@@ -13,13 +13,25 @@
 
 @media (min-width: 40rem) {
     .team-grid {
-        grid-template-columns: repeat(2, minmax(0, 1fr));
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+
+    .team-grid__intro {
+        grid-column: 1 / -1;
     }
 }
 
 @media (min-width: 64rem) {
     .team-grid {
-        grid-template-columns: repeat(3, minmax(0, 1fr));
+        grid-template-columns: repeat(4, minmax(0, 1fr));
+    }
+
+    .team-grid__intro {
+        grid-column: auto;
+    }
+
+    .team-grid:has(> li:nth-child(5)) .team-grid__intro {
+        grid-row: span 2;
     }
 }
 

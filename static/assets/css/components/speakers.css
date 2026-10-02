@@ -37,6 +37,12 @@
     padding-bottom: var(--space-4);
 }
 
+.speaker__session {
+    font-size: var(--text-sm);
+    font-weight: 700;
+    line-height: 1.5;
+}
+
 .speaker__bio {
     font-size: var(--text-sm);
     line-height: 1.7;

@@ -38,6 +38,24 @@
     line-height: 1.4;
 }
 
+.stat-panel {
+    background: var(--color-lavender);
+    padding: clamp(var(--space-4), 0.5rem + 2.5vw, var(--space-7));
+}
+
+.stat-panel .stat-grid {
+    gap: var(--space-4);
+}
+
+.stat-panel .stat {
+    min-height: 10rem;
+    padding: var(--space-5) var(--space-4);
+}
+
+.stat-panel .stat__figure {
+    font-size: var(--text-4xl);
+}
+
 .stat--purple {
     background: var(--color-purple);
     color: var(--color-white);
